@@ -38,5 +38,6 @@ export const NavBar: React.FC = observer(() => {
         </Link>
       </nav>
     </header>
+    
   );
 });

@@ -2,7 +2,7 @@
 import { UserStore } from "./UserStore";
 import { TaskStore } from "./TaskStore";
 import { PopupStore } from "./PopupStore";
-import { OperationStore } from "./OperationStore";
+import { OperationStore } from "@/stores/OperationStore";
 
 export class RootStore {
   userStore: UserStore;

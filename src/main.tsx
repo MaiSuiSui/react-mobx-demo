@@ -7,10 +7,14 @@ import { StoreProvider } from "./context/storeContext";
 import { rootStore } from "./stores";
 import "./styles/index.css";
 
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <StoreProvider store={rootStore}>
-      <BrowserRouter>
+      <BrowserRouter future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}>
         <App />
       </BrowserRouter>
     </StoreProvider>
